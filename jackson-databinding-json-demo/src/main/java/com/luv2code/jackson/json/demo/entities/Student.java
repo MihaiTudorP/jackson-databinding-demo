@@ -5,11 +5,14 @@ package com.luv2code.jackson.json.demo.entities;
 
 import java.util.Arrays;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * Entity class for student
  * @author Mihai-Tudor Popescu
  *
  */
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class Student {
 	private int id;
 	private String firstName;
